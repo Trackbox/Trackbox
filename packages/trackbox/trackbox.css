@@ -1,30 +1,36 @@
 /**********
  Global Classes
  **********/
+
 a {
 	cursor: pointer;
 }
+
 .row {
 	height: auto;
 	width: 100%;
 	flex: none;
 	-webkit-flex: none;
 }
+
 .bar-item {
 	display: table-cell;
 	line-height: 0;
 }
+
 .bar-item-pusher {
-	display:inline-block;
-	vertical-align:top;
-	flex:1 1 auto;
-	-webkit-flex:1 1 auto;
+	display: inline-block;
+	vertical-align: top;
+	flex: 1 1 auto;
+	-webkit-flex: 1 1 auto;
 }
+
 path, rect, circle, ellipse, line, polyline, polygon {
 	transition: fill 0.1s;
 }
+
 a, div {
-	transition:background-color 0.1s;
+	transition: background-color 0.1s;
 }
 
 div, img, svg, p, a, h1, h2, h3, h4, h5, h6, span, label, table, tbody, tr, td {
@@ -37,23 +43,27 @@ div, img, svg, p, a, h1, h2, h3, h4, h5, h6, span, label, table, tbody, tr, td {
 }
 
 .button, button {
-	fill:||solid2||;
+	fill: ||solid2||;
 }
+
 .button:hover {
-	fill:||solid1||;
-	background-color:||background4||;
+	fill: ||solid1||;
+	background-color: ||background4||;
 }
 
 .button-active {
-	background-color:||background4||;
+	background-color: ||background4||;
 }
+
 
 /**********
  Document
  **********/
+
 html {
-	height:100%;
+	height: 100%;
 }
+
 body {
 	height: 100%;
 	width: 100%;
@@ -63,8 +73,9 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	user-select: none;
-	overflow:hidden;
+	overflow: hidden;
 }
+
 #wrapper {
 	height: 100%;
 	width: 100%;
@@ -73,25 +84,28 @@ body {
 	display: flex;
 	flex-direction: column;
 	-webkit-flex-direction: column;
-	overflow-x:hidden;
-	color:||solid2||;
+	overflow-x: hidden;
+	color: ||solid2||;
 }
+
 #wrapper.border {
 	width: calc(100% - 2px);
 	height: calc(100% - 2px);
-	border:1px solid ||accent1||;
+	border: 1px solid ||accent1||;
 }
+
 
 /**********
  Title Bar
  **********/
+
 #title-bar {
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: row;
 	-webkit-flex-direction: row;
-	height:63px;
-	background-color:||background2||;
+	height: 63px;
+	background-color: ||background2||;
 	-webkit-app-region: drag;
 }
 
@@ -99,28 +113,34 @@ body {
 	-webkit-app-region: no-drag;
 }
 
-/* /Logo and title */
+
+/* Logo and title */
+
 #title {
-	margin-right:5px;
-	float:left;
-	flex:0 0 auto;
-	display:flex;
-	flex-direction:column;
+	margin-right: 5px;
+	float: left;
+	flex: 0 0 auto;
+	display: flex;
+	flex-direction: column;
 	-webkit-flex: 0 0 auto;
-	height:63px;
+	height: 63px;
 }
+
 #title span {
 	flex: 1 1 auto;
 }
+
 #title a {
 	flex: 0 0 auto;
-	display:block;
-	margin-left:20px;
+	display: block;
+	margin-left: 20px;
 }
+
 #title svg {
 	display: inline-block;
 	vertical-align: middle;
 }
+
 #title h1 {
 	font-family: 'Montserrat', sans-serif;
 	margin: 0;
@@ -128,307 +148,366 @@ body {
 	font-size: 36px;
 	font-weight: 400;
 	vertical-align: middle;
-	color:||solid2||;
-	margin-left:15px;
-	line-height:0;
+	color: ||solid2||;
+	margin-left: 15px;
+	line-height: 0;
 }
 
-/* /Search bar */
+
+/* Search bar */
+
 #search-bar {
-	flex:1 1 auto;
+	flex: 1 1 auto;
 	-webkit-flex: 1 1 auto;
-	margin:15px;
-	display:flex;
+	margin: 15px;
+	display: flex;
 }
+
 #search-bar div {
-	border:1px solid ||solid3||;
-	float:left;
-	width:100%;
-	max-width:600px;
-	min-width:50px;
-	position:relative;
-	background-color:||background1||;
+	border: 1px solid ||solid3||;
+	float: left;
+	width: 100%;
+	max-width: 600px;
+	min-width: 50px;
+	position: relative;
+	background-color: ||background1||;
 }
+
 #search-bar div input {
-	border:none;
-	font-family:'Roboto';
-	font-size:16px;
-	margin:3px 6px;
-	width:calc(100% - 36px);
-	height:25px;
-	padding:0;
-	outline:none;
-	box-shadow:none;
-	background:transparent;
-	color:||solid1||;
-	-moz-user-select: 
+	border: none;
+	font-family: 'Roboto';
+	font-size: 16px;
+	margin: 3px 6px;
+	width: calc(100% - 36px);
+	height: 25px;
+	padding: 0;
+	outline: none;
+	box-shadow: none;
+	background: transparent;
+	color: ||solid1||;
+	-moz-user-select:
 }
+
 #search-bar a {
-	position:absolute;
-	right:0;
-	padding:7px;
-	padding-top:8px;
+	position: absolute;
+	right: 0;
+	padding: 7px;
+	padding-top: 8px;
 }
+
 #search-bar a svg {
-	display:block;
+	display: block;
 }
+
 #search-bar div input:invalid {
-	width:calc(100% - 12px);
+	width: calc(100% - 12px);
 }
+
 #search-bar div input:invalid + a {
-	display:none;
+	display: none;
 }
+
 
 /* Page tabs */
+
 .page-selector {
-	padding:17px 15px 16px 15px;
+	padding: 17px 15px 16px 15px;
 }
+
 .page-selector-active {
-	border-top-width:1px;
-	border-top-style:solid;
-	padding:16px 15px;
-	border-color:||accent1||;
-	background-color:||background1||;
+	border-top-width: 1px;
+	border-top-style: solid;
+	padding: 16px 15px;
+	border-color: ||accent1||;
+	background-color: ||background1||;
 }
+
 .page-selector-active:hover {
-	background-color:||background1||;
+	background-color: ||background1||;
 }
 
 .page-selector svg {
-	width:30px;
-	height:30px;
+	width: 30px;
+	height: 30px;
 }
 
 
-/* //Window buttons */
+/* Window buttons */
+
 #window-buttons {
-	float:right;
-	flex:0 0 auto;
+	float: right;
+	flex: 0 0 auto;
 	-webkit-flex: 0 0 auto;
-    display: inline-block;
-    height: auto;
-    width: auto;
-    float: right;
+	display: inline-block;
+	height: auto;
+	width: auto;
+	float: right;
 	clear: both;
-    font-size: 0;
+	font-size: 0;
 }
+
 #window-buttons a {
-	padding: 10px;
+	padding: 10px 18px;
 	margin: 0;
 	height: auto;
 	display: inline-block;
 }
+
 #window-buttons a > svg {
 	padding: 0;
 	margin: 0;
 	display: block;
 }
 
-/* //View type buttons  */
+/* View type buttons  */
+
 #view-selector {
-    display: inline-block;
-    height: auto;
-    width: auto;
-    float: right;
+	display: inline-block;
+	height: auto;
+	width: auto;
+	float: right;
 	clear: both;
-    font-size: 0;
+	font-size: 0;
 }
+
 #view-selector a {
-    display: inline-block;
-    padding: 8px 6px 7px 6px;
+	display: inline-block;
+	padding: 8px 6px 7px 6px;
 }
+
 #view-selector a svg {
-    display: block;
+	display: block;
 }
+
 
 /**********
  Page
  **********/
+
 #page {
 	flex: auto;
 	-webkit-flex: auto;
 	height: 100%;
 	overflow-y: auto;
-	background-color:||background1||;
+	background-color: ||background1||;
 }
+
 
 /**********
  Timeline
  **********/
+
 #timeline {
-	height:3px;
-	width:100%;
-	display:block;
-	background-color:||background4||;
+	height: 3px;
+	width: 100%;
+	display: block;
+	background-color: ||background4||;
 }
+
 #timeline-bar {
 	height: 100%;
 	width: 0;
-	background-color:||accent1||;
+	background-color: ||accent1||;
 }
+
 
 /**********
  Timeline Knob and Drag Sensor
  **********/
+
 #timeline-bar-sensor {
 	height: 15px;
 	width: 100%;
 	bottom: 64px;
 	position: absolute;
 	cursor: pointer;
-	overflow:hidden;
-	z-index:1;
-	transition:bottom 0.25s, height 0.1s;
+	overflow: hidden;
+	z-index: 1;
+	transition: bottom 0.25s, height 0.1s;
 }
+
 .slider-knob {
-	position:absolute;
-	width:0;
-	left:0;
-	cursor:pointer;
+	position: absolute;
+	width: 0;
+	left: 0;
+	cursor: pointer;
 }
+
 .slider-knob div {
-	width:15px;
-	height:15px;
-	border-radius:50%;
-	position:absolute;
-	left:-7.5px;
-	transition:width 0.1s, height 0.1s;
-	background-color:||accent1||;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	position: absolute;
+	left: -7.5px;
+	transition: width 0.1s, height 0.1s;
+	background-color: ||accent1||;
 }
+
 
 /**********
  Playback Bar
  **********/
+
 .row-item {
-	display:inline-block;
-	vertical-align:top;
+	display: inline-block;
+	vertical-align: top;
 }
+
 .spacer-15px {
-	width:15px;
+	width: 15px;
 }
+
 #playback {
-	font-size:0;
-	box-shadow:0 0 20px rgba(0, 0, 0, 0.125);
-	z-index:1;
-	overflow:hidden;
-	height:73px;
-	transition:height 0.25s;
-	background-color:||background2||;
+	font-size: 0;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.125);
+	z-index: 1;
+	overflow: hidden;
+	height: 73px;
+	transition: height 0.25s;
+	background-color: ||background2||;
 }
+
 #playback.hidden {
-	height:0;
-	visibility:hidden;
-	transition:height 0.25s ease 0s, visibility 0s ease 0.25s
+	height: 0;
+	visibility: hidden;
+	transition: height 0.25s ease 0s, visibility 0s ease 0.25s
 }
+
 #playback.hidden #timeline-bar-sensor {
-	bottom:-9px;
-	height:0;
-	transition:bottom 0.25s, height 0.1s;
-	pointer-events:none;
+	bottom: -9px;
+	height: 0;
+	transition: bottom 0.25s, height 0.1s;
+	pointer-events: none;
 }
+
 #playback.hidden .slider-knob div {
-	transition:width 0.1s, height 0.1s;
-	width:0;
-	height:0;
+	transition: width 0.1s, height 0.1s;
+	width: 0;
+	height: 0;
 }
+
 #playback-bar {
-	flex:0 0 auto;
-	display:block;
-	clear:both;
-	display:flex;
+	flex: 0 0 auto;
+	display: block;
+	clear: both;
+	display: flex;
 	flex-flow: row nowrap;
-	position:relative;
+	position: relative;
 }
+
 #playback-bar > div {
-	display:inline-block;
+	display: inline-block;
 }
+
 #playback-left {
 	flex: 1;
-	white-space:nowrap;
-	overflow:hidden;
-	position:relative;
+	white-space: nowrap;
+	overflow: hidden;
+	position: relative;
 }
+
 #playback-left::after {
-	width:20px;
-	height:100%;
-	right:0;
-	position:absolute;
-	content:"";
+	width: 20px;
+	height: 100%;
+	right: 0;
+	position: absolute;
+	content: "";
 	background-image: linear-gradient(to right, rgba(245, 245, 245, 0), rgba(245, 245, 245, 1));
 }
 
-/* /Right side of playback bar */
+
+/* Right side of playback bar */
+
 #playback-right {
 	flex: 1;
 }
+
 #playback-right > div {
-	float:right;
+	float: right;
 }
+
 
 /* /Album art */
+
 #playback-art {
-	display:inline-block;
+	display: inline-block;
 }
+
 #playback-art img {
-	height:70px;
-	vertical-align:top;
+	height: 70px;
+	vertical-align: top;
 }
 
-/* /Current track */
+
+/* Current track */
+
 #current-track {
-	height:70px;
+	height: 70px;
 }
+
 #current-track > div {
-	font-size:0;
-	display:flex;
-	display:-webkit-flex;
-	flex-direction:column;
-	-webkit-flex-direction:column;
-	height:100%;
+	font-size: 0;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	height: 100%;
 }
+
 #current-track a:hover {
-	text-decoration:underline;
+	text-decoration: underline;
 }
 
-/* //Title */
+
+/* Title */
+
 #current-track-upper {
-	display:inline-block;
-	flex:0 0 auto;
-	-webkit-flex:0 0 auto;
-	margin-top:10px;
+	display: inline-block;
+	flex: 0 0 auto;
+	-webkit-flex: 0 0 auto;
+	margin-top: 10px;
 }
+
 #current-track-title {
-	margin:0;
-	font-size:24px;
-	line-height:100%;
+	margin: 0;
+	font-size: 24px;
+	line-height: 100%;
 }
 
-/* //Vertical spacer */
+
+/* Vertical spacer */
+
 #current-track-middle {
-	flex:1 1 auto;
-	-webkit-flex:1 1 auto;
+	flex: 1 1 auto;
+	-webkit-flex: 1 1 auto;
 }
 
-/* //Album and artist */
+
+/* Album and artist */
+
 #current-track-lower {
-	margin-bottom:10px;
-}
-#current-track-album {
-	font-size:16px;
-	margin:0;
-	display:inline;
-	line-height:100%;
-	margin-right:12px;
-}
-#current-track-artist {
-	font-size:16px;
-	margin:0;
-	display:inline;
-	line-height:100%;
-	font-weight:300;
+	margin-bottom: 10px;
 }
 
-/* /Playback buttons */
+#current-track-album {
+	font-size: 16px;
+	margin: 0;
+	display: inline;
+	line-height: 100%;
+	margin-right: 12px;
+}
+
+#current-track-artist {
+	font-size: 16px;
+	margin: 0;
+	display: inline;
+	line-height: 100%;
+	font-weight: 300;
+}
+
+
+/* Playback buttons */
+
 #playback-buttons .bar-item, #playback-right .bar-item {
 	display: table-cell;
 	height: 40px;
@@ -437,150 +516,179 @@ body {
 	text-align: center;
 	vertical-align: middle;
 }
+
 #playback-buttons .bar-item > div, #playback-right .bar-item > div {
 	width: 40px;
 }
 
-/* ///Volume */
+
+/* Volume */
+
 #volume-control > div {
-	vertical-align:middle;
-	display:table-cell;
+	vertical-align: middle;
+	display: table-cell;
 }
+
 #volume-control > div:last-child {
-	width:0;
-	overflow:hidden;
-	transition:width 0.25s;
-	position:relative;
+	width: 0;
+	overflow: hidden;
+	transition: width 0.25s;
+	position: relative;
 }
+
 #volume-control:hover > div:last-child, #volume-control:active > div:last-child {
-	width:200px;
-	transition:width 0.25s;
+	width: 200px;
+	transition: width 0.25s;
 }
 
 #volume-control .knob {
-	position:absolute;
-	left:7.5px;
-	right:17.5px;
-	top:0;
-	height:100%;
+	position: absolute;
+	left: 7.5px;
+	right: 17.5px;
+	top: 0;
+	height: 100%;
 }
+
 #volume-control .knob > div {
-	position:absolute;
-	top:0;
-	bottom:0;
-	margin:auto;
-	height:0;
-	width:0;
-	border-radius:50%;
-	z-index:1;
-	left:100%;
-	padding:0;
-	margin-left:0;
-	transition:padding 0.2s 0.05s, margin-left 0.2s 0.05s;
-	background-color:||accent1||;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	height: 0;
+	width: 0;
+	border-radius: 50%;
+	z-index: 1;
+	left: 100%;
+	padding: 0;
+	margin-left: 0;
+	transition: padding 0.2s 0.05s, margin-left 0.2s 0.05s;
+	background-color: ||accent1||;
 }
+
 #volume-control:hover .knob > div, #volume-control:active .knob > div {
-	padding:7.5px;
-	margin-left:-7.5px;
-	transition:padding 0.2s 0.05s, margin-left 0.2s 0.05s;
+	padding: 7.5px;
+	margin-left: -7.5px;
+	transition: padding 0.2s 0.05s, margin-left 0.2s 0.05s;
 }
 
 #volume-control .track {
-	position:absolute;
-	top:0;
-	bottom:0;
-	margin:auto;
-	height:3px;
-	left:0;
-	right:10px;
-	width:auto;
-	overflow:hidden;
-	background-color:||accent1||;
-}
-#volume-control .track > div {
-	position:absolute;
-	height:100%;
-	left:0;
-	right:7.5px;
-}
-#volume-control .track > div > div:first-child {
-	width:auto;
-	height:100%;
-	position:absolute;
-	left:7.5px;
-	right:0;
-}
-#volume-control .track > div > div:first-child > div {
-	width:100%;
-	height:100%;
-}
-#volume-control .track > div > div:last-child {
-	position:absolute;
-	height:100%;
-	left:0;
-	width:8px;
-}
-#volume-control .track > div > div {
-	width:100%;
-	height:100%;
-	left:7.5px;
-	right:7.5px;
-	background-color:||accent1||;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	height: 3px;
+	left: 0;
+	right: 10px;
+	width: auto;
+	overflow: hidden;
+	background-color: ||accent1||;
 }
 
-/* ///Playback Order */
+#volume-control .track > div {
+	position: absolute;
+	height: 100%;
+	left: 0;
+	right: 7.5px;
+}
+
+#volume-control .track > div > div:first-child {
+	width: auto;
+	height: 100%;
+	position: absolute;
+	left: 7.5px;
+	right: 0;
+}
+
+#volume-control .track > div > div:first-child > div {
+	width: 100%;
+	height: 100%;
+}
+
+#volume-control .track > div > div:last-child {
+	position: absolute;
+	height: 100%;
+	left: 0;
+	width: 8px;
+}
+
+#volume-control .track > div > div {
+	width: 100%;
+	height: 100%;
+	left: 7.5px;
+	right: 7.5px;
+	background-color: ||accent1||;
+}
+
+
+/* Playback Order */
+
 #playback-order {
 	display: table-cell;
 }
+
 #playback-order > div {
-	display:inline-block;
-	float:left;
-}
-#playback-order:hover .playback-order-before-1, #playback-order:hover .playback-order-after-1 {
-	width:40px;
-}
-#playback-order:hover .playback-order-before-2, #playback-order:hover .playback-order-after-2 {
-	width:80px;
-}
-#playback-order:hover .playback-order-before-3, #playback-order:hover .playback-order-after-3 {
-	width:120px;
-}
-#playback-order:hover .playback-order-before-4, #playback-order:hover .playback-order-after-4 {
-	width:160px;
-}
-#playback-order:hover .playback-order-before-5, #playback-order:hover .playback-order-after-5 {
-	width:200px;
-}
-#playback-order:hover .playback-order-before-6, #playback-order:hover .playback-order-after-6 {
-	width:240px;
-}
-#playback-order:hover .playback-order-before-7, #playback-order:hover .playback-order-after-7 {
-	width:280px;
-}
-#playback-order:hover .playback-order-before-8, #playback-order:hover .playback-order-after-8 {
-	width:320px;
-}
-#playback-order:hover .playback-order-before-9, #playback-order:hover .playback-order-after-9 {
-	width:360px;
-}
-#playback-order:hover .playback-order-before-10, #playback-order:hover .playback-order-after-10 {
-	width:400px;
-}
-div[class^='playback-order-before-'], div[class*=' playback-order-before-'], div[class^='playback-order-after-'], div[class*=' playback-order-after-'] {
-	width:0;
-	transition:width 0.25s;
-	overflow:hidden;
-}
-#playback-order:hover .playback-order-active svg * {
-	fill:#000000;
+	display: inline-block;
+	float: left;
 }
 
-/* /Playback times */
+#playback-order:hover .playback-order-before-1, #playback-order:hover .playback-order-after-1 {
+	width: 40px;
+}
+
+#playback-order:hover .playback-order-before-2, #playback-order:hover .playback-order-after-2 {
+	width: 80px;
+}
+
+#playback-order:hover .playback-order-before-3, #playback-order:hover .playback-order-after-3 {
+	width: 120px;
+}
+
+#playback-order:hover .playback-order-before-4, #playback-order:hover .playback-order-after-4 {
+	width: 160px;
+}
+
+#playback-order:hover .playback-order-before-5, #playback-order:hover .playback-order-after-5 {
+	width: 200px;
+}
+
+#playback-order:hover .playback-order-before-6, #playback-order:hover .playback-order-after-6 {
+	width: 240px;
+}
+
+#playback-order:hover .playback-order-before-7, #playback-order:hover .playback-order-after-7 {
+	width: 280px;
+}
+
+#playback-order:hover .playback-order-before-8, #playback-order:hover .playback-order-after-8 {
+	width: 320px;
+}
+
+#playback-order:hover .playback-order-before-9, #playback-order:hover .playback-order-after-9 {
+	width: 360px;
+}
+
+#playback-order:hover .playback-order-before-10, #playback-order:hover .playback-order-after-10 {
+	width: 400px;
+}
+
+div[class^='playback-order-before-'], div[class*=' playback-order-before-'], div[class^='playback-order-after-'], div[class*=' playback-order-after-'] {
+	width: 0;
+	transition: width 0.25s;
+	overflow: hidden;
+}
+
+#playback-order:hover .playback-order-active svg * {
+	fill: #000000;
+}
+
+
+/* Playback times */
+
 #song-time {
-	position:absolute;
-	font-size:10px;
-	line-height:100%;
-	top:2px;
-	right:2px;
-	margin:0;
+	position: absolute;
+	font-size: 10px;
+	line-height: 100%;
+	top: 2px;
+	right: 2px;
+	margin: 0;
 }
